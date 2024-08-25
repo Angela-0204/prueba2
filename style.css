@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    margin: auto;
+    padding: 20px;
+    background-color: #fba9a93f; 
+}
+
+.parrafo h3 {
+    font-size: 25px;
+    margin-top: 30px;
+   
+    text-align: center;
+    text-transform: uppercase;
+    color: #333; /* Color del texto */
+}
+
+.caja h1 {
+    font-size: 6rem; /* Tamaño responsivo */
+    text-align: center;
+    color: #f05b74;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.caja img {
+    max-width: 100%;  /* Hace que la imagen no exceda el ancho del contenedor */
+  
+}
+
+.nombre h2 {
+    font-size: 3rem; /* Tamaño responsivo */
+    text-align: center;
+    color: #f05b74;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.invitacion p {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem; /* Tamaño responsivo */
+    color: #333; /* Color del texto */
+}
+
+.ale h1 {
+    font-size: 4rem; /* Tamaño responsivo */
+    color: #f05b74;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.column {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem; /* Tamaño responsivo */
+    flex: 1;
+    padding: 1rem;
+    border-right: 2px solid #f05b74;
+    top: 30px;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.numero h2 {
+    color: #f05b74;
+    font-weight: 700;
+    font-size: 3rem; 
+    margin: 0;
+}
+
+.column-center .numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.caja .abejita {
+    max-width: 40px; /* Ajusta el tamaño de la abejita */
+    position: absolute; /* Posiciona la abejita de forma más precisa */
+    right: -30px; /* Ajusta esta posición para mover la abejita horizontalmente */
+    top: 20px; /* Ajusta esta posición para mover la abejita verticalmente */
+}
+.caja .abejita2 {
+    max-width: 20px; /* Ajusta el tamaño de la abejita */
+    position: absolute; /* Posiciona la abejita de forma más precisa */
+    right: -30px; /* Ajusta esta posición para mover la abejita horizontalmente */
+    margin-top: 95px;
+    
+}
+.caja .abejita3 {
+    max-width: 40px; /* Ajusta el tamaño de la abejita */
+    position: absolute; /* Posiciona la abejita de forma más precisa */
+    right: -30px; /* Ajusta esta posición para mover la abejita horizontalmente */
+    top: 20px; 
+}
+.direccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.direccion h1 {
+    font-size: 3.5rem; /* Tamaño responsivo */
+    text-align: center;
+    padding: auto;
+    margin-left: 15px;
+    color: #f05b74;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+.direccion p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: auto;
+    margin-left: 15px;
+    color: #333;
+    text-transform: uppercase;
+    font-family:'Montserrat Alternates', sans-serif ;
+
+
+}
+
+.caja img {
+    max-width: 100%;  /* Hace que la imagen no exceda el ancho del contenedor */
+  
+}
+
+.direccion .btn-custom {
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #f7a2b6; /* Color rosado claro */
+    color: #fff; /* Color del texto del botón */
+    margin-bottom: 50px;
+    font-family:'Montserrat Alternates', sans-serif ;
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    font-size: 0.9rem; /* Tamaño del texto del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+     font-weight: 300;
+    border: none;
+}
+
+.direccion .btn-custom:hover {
+    background-color: #ff5087; /* Color rosado más oscuro al pasar el ratón */
+}
+.contacto {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .column:last-child {
+        border-bottom: none;
+    }
+
+    .parrafo h3 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .caja {
+        justify-content: flex-start; 
+        flex-direction: row; 
+    }
+
+   .direccion .ubi{
+   max-width: 100%;
+  
+   }
+    .direccion{
+        margin-left:-10px;
+
+        margin-right: 50px;
+        justify-content: flex-start; 
+        flex-direction: row; 
+    }
+    .caja .abejita {
+        max-width: 70px; 
+        right: 170px; 
+        margin-top: 120px;
+        
+    }
+    .caja .abejita2 {
+        max-width: 60px; 
+       right: 60px;
+        margin-top: 200px;
+        
+    }
+
+
+    .caja h1 {
+        font-size: 60px; /* Disminuye el tamaño del texto en teléfonos */
+        margin-left: auto; /* Empuja el texto hacia la derecha */
+    }
+
+    .nombre h2 {
+        font-size: 3rem;
+    }
+
+    .ale h1 {
+        font-size: 4.5rem;
+    }
+
+    .numero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .caja img {
+        max-width: 60%;  /* Reduce la imagen al 80% del contenedor en pantallas pequeñas */
+      
+    }
+    .direccion img {
+        max-width: 65%;  /* Reduce la imagen al 80% del contenedor en pantallas pequeñas */
+        padding: 5px;
+    
+      
+    }
+    .parrafo h3 {
+        margin-left: 35px;
+        font-size: 11px; /* Reducir el tamaño del texto */
+    }
+   /* Ajustes de estilo para dispositivos móviles */
+   .direccion .btn-custom {
+
+    margin-left: auto;
+    font-size: 0.9rem; /* Aumenta el tamaño del texto del botón para móviles */
+    padding: 5px 10px; /* Aumenta el tamaño del botón para hacer clic más fácilmente */
+ 
+    width: 100%; /* Hace que el botón ocupe todo el ancho del contenedor */
+    max-width: 300px; /* Opcional: limita el ancho máximo del botón */
+}
+.direccion .ubi{
+    
+    max-width: 28%;
+    flex-direction:row;
+    left: 0;
+    float: left;
+    
+}
+
+
+
+}
+
